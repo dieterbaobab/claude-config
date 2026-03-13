@@ -17,13 +17,8 @@ Check if a CLAUDE.md exists in the current project repo root.
 - Proceed to Step 2
 
 **If no CLAUDE.md exists:**
-- Bootstrap a baseline CLAUDE.md by scanning the repo (equivalent of `/init`):
-  - `package.json` — commands/scripts, project name, dependencies
-  - Linter/prettier configs — conventions, formatting rules
-  - `tsconfig.json` / `babel.config.js` — path aliases
-  - Directory structure — key files, architecture overview
-- Use a section structure similar to existing rich CLAUDE.md files as reference: Commands, Architecture, Conventions, Key Files
-- Write the baseline CLAUDE.md
+- Invoke `/init` to generate the baseline CLAUDE.md. Do NOT manually scan the repo — `/init` has its own logic for reading `package.json`, README, configs, and source files to produce a well-structured CLAUDE.md. Let it do its job.
+- Wait for `/init` to finish and write the CLAUDE.md before proceeding.
 - Proceed to Step 2
 
 Either way, Step 2 starts with a CLAUDE.md to enrich.
