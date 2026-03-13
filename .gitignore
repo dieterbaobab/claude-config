@@ -1,0 +1,20 @@
+# Ignore everything by default
+*
+
+# Allow repo metadata
+!.gitignore
+!.gitmodules
+!README.md
+
+# Allow user-owned config
+!settings.json
+
+# Allow skills directory and all contents
+!skills/
+!skills/**
+
+# Re-ignore junk inside skills
+skills/**/.DS_Store
+skills/**/__pycache__/
+skills/**/*.pyc
+skills/**/*.swp
